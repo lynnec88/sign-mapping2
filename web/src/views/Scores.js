@@ -25,7 +25,7 @@ const Scores = () => {
               <div className="card p-3">
                 <figure className="p-3 mb-0">
                   <blockquote className="blockquote">
-                    <h1 className="fst-italic">{score.score}</h1>
+                    <h1 className="fst-italic">{score.score}%</h1>
                     <p>{score.quizname}</p>
                   </blockquote>
                   <figcaption className="blockquote-footer mb-0 text-muted float-end mt-0">

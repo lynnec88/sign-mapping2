@@ -4,121 +4,141 @@
       "sign_id": 1,
       "name": "off duty",
       "image_url": "images/off-duty.gif",
-      "description": "下班"
+      "description": "The sign for 'work' is made by shaping both hands into 'fist shapes' (the letter 's.')  With your palms facing downward, use your dominant fist to tap the wrist or the side of your non-dominant fist a few times. The sign for 'finish' is made by placing both of your open hands in front of you.  Each hand should face you, with your fingers pointing upward. Twist both hands quickly a couple times ending with the palms pointing (somewhat) forward.",
+      "category_id": 6
     },
     {
       "sign_id": 2,
       "name": "hello",
       "image_url": "images/hello.gif",
-      "description": "你好"
+      "description": "Simply place the hand you are writing with on your forehead close to your ear and move it outwards and away from your body. Don't forget to smile!",
+      "category_id": 1
     },
     {
       "sign_id": 3,
       "name": "cold",
       "image_url": "images/cold.gif",
-      "description": "冷吗"
+      "description": "The sign for 'cold' means 'cold temperature.' It doesn't mean 'to have a head-cold' or to be sick. Use your arms to represent shivering.",
+      "category_id": 5
     },
     {
       "sign_id": 4,
       "name": "good night",
       "image_url": "images/good-night.gif",
-      "description": "晚安"
+      "description": "The sign 'goodnight' is a compound of the signs GOOD and NIGHT. When you compound (join together) two signs you tend to reduce the movement and contacts of the original signs. 'Goodnight' is not two signs strung together. It is a single sign that is specifically used  to wish someone well as you separate for the evening.",
+      "category_id": 1
     },
     {
       "sign_id": 5,
       "name": "faint",
       "image_url": "images/faint.gif",
-      "description": "晕了"
+      "description": "You can use a 'V'-handshape to represent a person falling.  You can modify the movement of the falling process to show exactly how the person fell",
+      "category_id": 6
     },
     {
       "sign_id": 6,
       "name": "doubt",
       "image_url": "images/doubt.gif",
-      "description": "疑问"
+      "description": "You can use a 'V'-handshape, and bend your index and middle fingers twice two fingers, while pointing at your eyes.",
+      "category_id": 6
     },
     {
       "sign_id": 7,
       "name": "drink more water",
       "image_url": "images/drink-more-water.gif",
-      "description": "多喝水"
+      "description": "The sign for 'drink' is made by forming your right hand into the letter 'C.' Move the hand to your mouth in a short arc. The sign for 'water' is made by forming your right hand into the letter 'W.' Touch the index finger to your mouth twice. The sign for 'more' uses flattened 'O' hands. Bring both 'O' hands together.",
+      "category_id": 3
     },
     {
       "sign_id": 8,
       "name": "rest",
       "image_url": "images/rest.gif",
-      "description": "休息"
+      "description": "The sign for 'rest' crosses the arms over the chest. The hands are 'loose' hands. The sign starts by touching the upper chest and then visibly 'relaxing' the hands and arms so they lay more flat on your chest.",
+      "category_id": 6
     },
     {
       "sign_id": 9,
       "name": "not tired",
       "image_url": "images/not-tired.gif",
-      "description": "不累"
+      "description": "The sign 'NO' can use a polite double motion or a firm single motion. To sign 'not,' form an 'A' hand with the thumb extended slightly more. Place the thumb under your chin and move the hand forward a few inches. 'Tired' starts like 'HAVE' and then hands slump downward.",
+      "category_id": 3
     },
     {
       "sign_id": 10,
       "name": "good morning",
       "image_url": "images/good-morning.gif",
-      "description": "早安"
+      "description": "The sign for 'morning' uses a palm-up flat hand (or slightly bent hand) on the dominant hand to represent the sun rising up from beneath the horizon. The non-dominant arm plays the role of the horizon.  The wrist of the dominant hand contacts the the non-dominant hand's fingers. ",
+      "category_id": 1
     },
     {
       "sign_id": 11,
       "name": "wipe sweat",
       "image_url": "images/wipe-sweat.gif",
-      "description": "擦汗"
+      "description": "Form a loose fist with extended thumb near forehead. Move hand diagonally down, brushing forehead. Extend fingers, mimicking wiping sweat. Continue motion to waist/hip level. Use facial expressions to convey action and emphasize wiping sweat.",
+      "category_id": 6
     },
     {
       "sign_id": 12,
       "name": "thanks",
       "image_url": "images/thank-you.gif",
-      "description": "谢谢"
+      "description": "Place your open hand to your lips, then move it forward and slightly downward. This gesture represents the act of blowing a kiss, expressing gratitude and appreciation. Maintain a sincere facial expression to convey your genuine thanks. Remember, body language and facial expressions are crucial in ASL for conveying emotions effectively.",
+      "category_id": 1
     },
     {
       "sign_id": 13,
       "name": "want to play",
       "image_url": "images/want-2-play.gif",
-      "description": "想玩"
+      "description": "First, form the sign for 'want' by extending your dominant hand with palm facing up and fingers slightly curled inward. Move your hand toward your chest in a small bouncing motion. Then, transition to the sign for 'play' by forming loose fists with palms facing each other. Move your hands up and down in a tapping motion, as if bouncing two balls off each other. ",
+      "category_id": 2
     },
     {
       "sign_id": 14,
       "name": "i am going to wash hands",
       "image_url": "images/go-2-wash-hands.gif",
-      "description": "我去洗手"
+      "description": "First, sign 'go' by extending your dominant hand with palm facing forward and fingers pointing in the direction you want to go. Move your hand away from your body in a smooth motion. Next, sign 'wash' by forming both hands into loose fists with palms facing each other. Make a scrubbing motion by rubbing your fists together. Finally, sign 'my hands' by pointing to your open palm with your index finger. ",
+      "category_id": 3
     },
     {
       "sign_id": 15,
       "name": "you are welcome",
       "image_url": "images/you-r-welcome.gif",
-      "description": "不客气"
+      "description": "Begin by extending both arms outward and slightly to the sides, with palms facing up and fingers relaxed. Then, bring your hands inward in a sweeping motion toward your chest, while simultaneously nodding your head slightly.",
+      "category_id": 3
     },
     {
       "sign_id": 16,
-      "name": "want sleep",
+      "name": "want to sleep",
       "image_url": "images/want-2-sleep.gif",
-      "description": "想睡觉"
+      "description": "First, sign 'sleep' by closing your dominant hand into a loose fist and resting it against the side of your face, with your thumb touching your cheek. Then, transition to the sign for 'want' by extending your dominant hand with palm facing up and fingers slightly curled inward. Move your hand toward your chest in a small bouncing motion.",
+      "category_id": 3
     },
     {
       "sign_id": 17,
       "name": "sleepy",
       "image_url": "images/sleepy.gif",
-      "description": "好困"
+      "description": "Close your dominant hand into a loose fist and resting it against the side of your face, with your thumb touching your cheek, repeat twice or thrice.",
+      "category_id": 5
     },
     {
       "sign_id": 18,
       "name": "tired",
       "image_url": "images/tired.gif",
-      "description": "累吗"
+      "description": "Extend both hands in front of your body with palms facing downward. With your fingers slightly bent and relaxed, bring both hands up toward your chest while lowering your shoulders.",
+      "category_id": 2
     },
     {
       "sign_id": 19,
       "name": "pity",
       "image_url": "images/pity.gif",
-      "description": "可怜"
+      "description": "Place your open hand on your chest near your heart, fingers spread slightly. Then, move your hand downward and outward in a sweeping motion.",
+      "category_id": 5
     },
     {
       "sign_id": 20,
       "name": "yeah",
       "image_url": "images/yeah.gif",
-      "description": "耶"
+      "description": "First, form your dominant hand into a fist. Bring your hand near your non-dominant shoulder, close to your ear, and move it quickly forward in a sharp, assertive motion.",
+      "category_id": 4
     }
 ],
 
@@ -184,7 +204,7 @@
       "question_id": 4,
       "quiz_id": 2,
       "question_text": "What does this sign mean?",
-      "option1": "sleep",
+      "option1": "want to sleep",
       "option2": "comfort",
       "option3": "tired",
       "answer": "1",

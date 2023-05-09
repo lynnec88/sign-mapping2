@@ -333,3 +333,8 @@ main{
 .info-window {
   width: 300px; /* Set the desired width here */
 }
+
+.bg-light {
+  --bs-bg-opacity: 1;
+  background-color: #ffffff !important;
+}

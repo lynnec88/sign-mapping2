@@ -23,7 +23,7 @@ class Sign(db.Model):
     sign_id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(50), nullable=False)
     image_url = db.Column(db.String(255), nullable=False)
-    description = db.Column(db.String(200))
+    description = db.Column(db.String(500))
 
     def __repr__(self):
         return f"<Sign sign_id={self.sign_id} name={self.name}" \

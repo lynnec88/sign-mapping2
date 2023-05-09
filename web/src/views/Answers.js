@@ -20,7 +20,7 @@ const Answers = () => {
   return (
     <div style={{ backgroundColor: 'white' }}>
       <div className="container marketing">
-        <h1 className="my-5">{userquizscore.quizname}: {userquizscore.score}</h1>
+        <h1 className="my-5">{userquizscore.quizname}: {userquizscore.score}%</h1>
         {userquizscore.useranswers.map((useranswer) => (
           <div className="row featurette card my-3" style={{ flexDirection: 'row' }} key={useranswer.id}>
             <div className="col-md-7 align-self-center p-lg-5">

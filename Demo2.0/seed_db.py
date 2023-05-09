@@ -17,11 +17,11 @@ with open('data/signs.json') as f:
 
 signs_in_db = []
 for sign in sign_data['signs']:
-    name, image_url, description =(
-        sign["name"],
-        sign["image_url"],
-        sign["description"],
-    )
+    name = sign["name"]
+    image_url = sign["image_url"]
+    description = sign["description"]
+    category_id = sign["category_id"]  # Retrieve the category ID from the sign data
+
     db_sign = crud.create_sign(name, image_url, description)
     signs_in_db.append(db_sign)
 
@@ -34,10 +34,9 @@ models.db.session.commit()
 
 categories_in_db = []
 for category in sign_data['categories']:
-    category_id, name =(
-        category["category_id"],
-        category["name"],
-    )
+    category_id = category["category_id"]
+    name = category["name"]
+
     db_category = crud.create_category(category_id, name)
     categories_in_db.append(db_category)
 
@@ -46,14 +45,15 @@ models.db.session.commit()
 
 # Sign categories
 db_sign_categories = []
-for sign in signs_in_db:
-    # Assign each sign to a random category
-    category = random.choice(categories_in_db)
-    db_sign_category = crud.create_signcategory(sign_id=sign.sign_id, category_id=category.category_id)
-    db_sign_categories.append(db_sign_category)
+for sign, category_id in zip(signs_in_db, [sign["category_id"] for sign in sign_data['signs']]):
+    db_category = next((c for c in categories_in_db if c.category_id == category_id), None)
+    if db_category:
+        db_sign_category = crud.create_signcategory(sign_id=sign.sign_id, category_id=db_category.category_id)
+        db_sign_categories.append(db_sign_category)
 
 models.db.session.add_all(db_sign_categories)
 models.db.session.commit()
+
 
 #Regional
 regional_in_db = []
