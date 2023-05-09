@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 
-const apiKey = 'AIzaSyCADitcl6cC-tR657OazDewsku539FCzBo';
+const apiKey = '';
 
 
 const Regional = () => {
