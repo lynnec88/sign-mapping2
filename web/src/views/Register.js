@@ -27,7 +27,7 @@ const Register = () => {
         alert(res.message);
         navigate('/login');
       })
-      .catch((error) => {}
+      .catch((error) => {
         alert('Registration failed, the mailbox is already registered');
         console.error('There was a problem with the fetch operation:', error);
       });
