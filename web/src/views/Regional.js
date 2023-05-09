@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 
-const apiKey = '';
+const apiKey = 'AIzaSyCADitcl6cC-tR657OazDewsku539FCzBo';
 
 
 const Regional = () => {
@@ -101,8 +101,9 @@ const Regional = () => {
       });
 
       const infoWindow1 = new window.google.maps.InfoWindow({
-        content: `<div>West regional sign for <b>${region.name}</b><br/><img src=/${region.west_url} alt="West regional sign for <b>${region.name}" width="50%"></div>`,
-        maxWidth: 300, // set the maximum width of the InfoWindow to 300 pixels
+        content: `<div id="info-window-content">West regional sign for <b>${region.name}</b><br/><img src=/${region.west_url} alt="West regional sign for <b>${region.name}"></div>`,
+        maxWidth: 500, // set the maximum width of the InfoWindow to 500 pixels
+        maxHeight: 500, // set the maximum height of the InfoWindow to 500 pixels
       });
 
       window.google.maps.event.addListener(westPolygon, 'mouseover', function (event) {
@@ -190,8 +191,9 @@ const Regional = () => {
       });
 
       const infoWindow2 = new window.google.maps.InfoWindow({
-        content: `<div>South regional sign for <b>${region.name}</b><br/><img src=/${region.southwest_url} alt="Region Image" width="50%"></div>`,
-        maxWidth: 300, // set the maximum width of the InfoWindow to 300 pixels
+        content: `<div id="info-window-content">Southwest regional sign for <b>${region.name}</b><br/><img src=/${region.southwest_url} alt="Southwest regional sign for <b>${region.name}"></div>`,
+        maxWidth: 500, // set the maximum width of the InfoWindow to 500 pixels
+        maxHeight: 500, // set the maximum height of the InfoWindow to 500 pixels
       });
 
       window.google.maps.event.addListener(southwestPolygon, 'mouseover', function (event) {
@@ -288,8 +290,9 @@ const Regional = () => {
       });
 
       const infoWindow3 = new window.google.maps.InfoWindow({
-        content: `<div>Midwest regional sign for <b>${region.name}</b><br/><img src=/${region.midwest_url} alt="Region Image" width="50%"></div>`,
-        maxWidth: 300, // set the maximum width of the InfoWindow to 300 pixels
+        content: `<div id="info-window-content">Midwest regional sign for <b>${region.name}</b><br/><img src=/${region.midwest_url} alt="Midwest regional sign for <b>${region.name}"></div>`,
+        maxWidth: 500, // set the maximum width of the InfoWindow to 500 pixels
+        maxHeight: 500, // set the maximum height of the InfoWindow to 500 pixels
       });
 
       window.google.maps.event.addListener(midwestPolygon, 'mouseover', function (event) {
@@ -390,8 +393,9 @@ const Regional = () => {
       });
 
       const infoWindow4 = new window.google.maps.InfoWindow({
-        content: `<div>South regional sign for <b>${region.name}</b><br/><img src=/${region.south_url} alt="Region Image" width="50%"></div>`,
-        maxWidth: 300, // set the maximum width of the InfoWindow to 300 pixels
+        content: `<div id="info-window-content">South regional sign for <b>${region.name}</b><br/><img src=/${region.south_url} alt="South regional sign for <b>${region.name}"></div>`,
+        maxWidth: 500, // set the maximum width of the InfoWindow to 500 pixels
+        maxHeight: 500, // set the maximum height of the InfoWindow to 500 pixels
       });
 
       window.google.maps.event.addListener(southPolygon, 'mouseover', function (event) {
@@ -456,8 +460,9 @@ const Regional = () => {
       });
 
       const infoWindow5 = new window.google.maps.InfoWindow({
-        content: `<div>Northeast regional sign for <b>${region.name}</b><br/><img src=/${region.northeast_url} alt="Region Image" width="50%"></div>`,
-        maxWidth: 300, // set the maximum width of the InfoWindow to 300 pixels
+        content: `<div id="info-window-content">Northeast regional sign for <b>${region.name}</b><br/><img src=/${region.northeast_url} alt="Northeast regional sign for <b>${region.name}"></div>`,
+        maxWidth: 500, // set the maximum width of the InfoWindow to 500 pixels
+        maxHeight: 500, // set the maximum height of the InfoWindow to 500 pixels
       });
 
       window.google.maps.event.addListener(northeastPolygon, 'mouseover', function (event) {

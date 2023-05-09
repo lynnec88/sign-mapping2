@@ -26,6 +26,7 @@ const Category = () => {
     },[])
 
     const options = {
+        // backgroundColor: '#483D8B',
         title: {
             text: 'Sign - Category Diagram',
             right: '15%'
@@ -63,7 +64,7 @@ const Category = () => {
                 opacity: 0.9,
                 width: 5,
                 curveness: 0,
-                color: '#89BABE'
+                color: '#91CC75'
             },
             label: {
                 show: true,
@@ -76,21 +77,21 @@ const Category = () => {
                 {
                     name: 'Sign',
                     itemStyle: {
-                        borderColor: '#E2C1C9',
-                        borderWidth: 3,
-                        shadowBlur: 20,
-                        shadowColor: '#E1AFA4',
-                        color: '#FEFDFD',
+                        // borderColor: '#E2C1C9',
+                        // borderWidth: 3,
+                        // shadowBlur: 20,
+                        // shadowColor: '#E1AFA4',
+                        color: '#FAC858',
                     },
                     symbolSize: 80,
                 }, {
                     name: 'Category',
                     itemStyle: {
-                        borderColor: '#C3CBE8',
-                        borderWidth: 4,
-                        shadowBlur: 10,
-                        shadowColor: '#9299C7',
-                        color: '#F9FCFF',
+                        // borderColor: '#C3CBE8',
+                        // borderWidth: 4,
+                        // shadowBlur: 10,
+                        // shadowColor: '#9299C7',
+                        color: '#9A60B4',
                     },
                     symbolSize: 120,
                 }],
