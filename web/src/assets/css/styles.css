@@ -98,7 +98,7 @@ main{
 @media (max-width: 768px) {
     .left{
         float: left;
-        width: 40%;
+        width: 100%;
         height: 90%;
         border-end-start-radius: 10px;
         display: flex;
@@ -113,21 +113,43 @@ main{
     background-image: url("../images/banner.png");
     background-color: white;
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: center;
     border-end-end-radius: 10px;
 }
 @media (max-width: 768px) {
   .right{
-    float: right;
-    width: 36%;
-    height: 85%;
+    /* float: right; */
+    width: 100%;
+    height: 100%;
     background-image: url("../images/banner.png");
     background-color: white;
     background-repeat: no-repeat;
-    background-position: left;
+    background-position: center;
     border-end-end-radius: 10px;
 }
 }
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.right {
+  order: -1; /* Change the order of the right div to be displayed first */
+}
+
+@media (min-width: 768px) {
+  /* Add a media query to reset the order on larger screens */
+  main {
+    flex-direction: row;
+  }
+
+  .right {
+    order: initial;
+  }
+}
+
+
 .star{
     background-color:bisque;
     width: min-content;
@@ -135,14 +157,20 @@ main{
     border-radius: 50px;
 }
 .title{
-    font-size: 60px;
+    font-size: 50px;
     font-weight: bolder;
 }
 @media (max-width: 768px) {
     .title {
-      font-size: 20px;
+      font-size: 30px;
     }
   }
+@media (max-width: 768px) {
+  .join,.star,.title,.desc{
+    margin: 20px 0 20px 50px;
+}
+}
+
 .desc{
     color: gray;
 }
