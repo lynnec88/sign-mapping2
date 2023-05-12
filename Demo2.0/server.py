@@ -27,11 +27,13 @@ def login():
     username = data.get('username')
     password = data.get('password')
     user = select_user(username, password)
+    print(f"Selected user: {user}")
     if user:
         session['user_id'] = user.user_id
         session['email'] = user.email
         return JsonResult.success("Login successful")
     else:
+        session.clear()  # Clear the session
         return JsonResult.fail("Login failed, please check if your username or password is wrong")
 
 
@@ -146,7 +148,6 @@ def save_review(sign_id):
         return JsonResult.success('Comment successfully!')
     else:
         return JsonResult.fail('Comment failed')
-
 
 if __name__ == '__main__':
     # db.create_all()
