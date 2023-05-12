@@ -153,6 +153,14 @@ def select_quizzes():
         })
     return result
 
+def quizzes_page():
+    quizzes = select_quizzes()
+    response = {
+        'quizzes': quizzes
+    }
+    return JsonResult.success("Get the list of quizzes successfully", response)
+
+
 def create_sign(name, image_url, description):
     """Create and return a new sign."""
     sign = Sign(name=name, image_url=image_url, description=description)
