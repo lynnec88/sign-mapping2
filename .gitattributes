@@ -1,1 +1,1 @@
-web/src/views/* linguist-vendored
+web/src/views/*.js linguist-detectable=false
