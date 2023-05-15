@@ -53,6 +53,7 @@ def quizzes_page():
     return JsonResult.success("Get the list of quizzes successfully", quizzes)
 
 
+
 @app.route('/quiz/<quiz_id>', methods=['POST'])
 @login_required
 def quiz_page(quiz_id):
