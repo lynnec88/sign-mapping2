@@ -9,7 +9,7 @@ from models import JsonResult
 
 app = Flask(__name__)
 app.secret_key = "dev"
-app.debug = True  # Enable Flask debugging mode
+app.debug = True
 app.config.from_object(config)
 CORS(app)
 db.init_app(app)
@@ -33,7 +33,7 @@ def login():
         session['email'] = user.email
         return JsonResult.success("Login successful")
     else:
-        session.clear()  # Clear the session
+        session.clear() 
         return JsonResult.fail("Login failed, please check if your username or password is wrong")
 
 
@@ -105,14 +105,7 @@ def answer_page(userquiz_id):
         userquizscore = select_userquizscore(userquiz_id)
         return JsonResult.success("Get test results successfully", userquizscore)
     elif request.method == 'POST':
-        # Retrieve the user's answers from the request data
         user_answers = request.get_json().get('user_answers')
-        
-        # Calculate the user's score
-        # score = calculate_user_score(userquiz_id, user_answers)
-        
-        # Update the user_quiz table with the new score
-        # update_user_quiz(userquiz_id, score, user_answers)
         
         return JsonResult.success("Test submission successful")
 

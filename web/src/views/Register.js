@@ -37,10 +37,9 @@ const Register = () => {
     <div className="container col-xxl-10 py-5" style={{ height: '90%' }}>
       <div className="row align-items-center h-100">
         <div className="col-lg-7 text-center text-lg-start">
-          <h1 className="display-4 fw-bold lh-1 mb-3">Vertically centered hero sign-up form</h1>
+          <h1 className="display-4 fw-bold lh-1 mb-3">Welcome to Sign Mapping</h1>
           <p className="col-lg-10 fs-4">
-            Below is an example form built entirely with Bootstrap’s form controls. Each required form group has a
-            validation state that can be triggered by attempting to submit the form without completing it.
+          Welcome to embark on this journey! Here you will be able to explore the different sign languages and learn how to classify sign language vocabulary. By learning sign language, you will be able to communicate more effectively with people who are deaf and improve understanding and communication.
           </p>
         </div>
         <div className="col-lg-5">

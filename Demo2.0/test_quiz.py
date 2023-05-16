@@ -1,40 +1,36 @@
-import json
-import pytest
+import unittest
 from flask import session
-
 from server import app
 
-@pytest.fixture
-def client():
-    app.config['TESTING'] = True
-    with app.test_client() as client:
-        with client.session_transaction() as sess:
-            sess['user_id'] = 1  # Set the user ID in the session for authentication, if needed
-        yield client
+class FlaskAppTests(unittest.TestCase):
+    def setUp(self):
+        app.config['TESTING'] = True
+        self.client = app.test_client()
 
-def test_quizzes_page(client):
-    # Perform a POST request to the '/quizzes' endpoint
-    response = client.post('/quizzes')
-    data = response.get_json()
+    def test_quizzes_page(self):
+        with self.client as client:
+            with client.session_transaction() as sess:
+                sess['user_id'] = 1
 
-    # Print the contents of data['data']
-    print(data['data'])
+            response = client.post('/quizzes')
+            data = response.get_json()
 
-    # Assert the response status code and the expected data
-    assert response.status_code == 200
-    assert data['message'] == 'Get the list of quizzes successfully'
-    assert any('quiz_id' in item for item in data['data'])  # Check if 'quiz_id' key exists in any dictionary within 'data'
+            self.assertEqual(response.status_code, 200)
+            self.assertEqual(data['message'], 'Get the list of quizzes successfully')
+            self.assertTrue(any('quiz_id' in item for item in data['data']))
 
+    def test_quiz_page(self):
+        with self.client as client:
+            with client.session_transaction() as sess:
+                sess['user_id'] = 1
 
+            quiz_id = 1
+            response = client.post(f'/quiz/{quiz_id}')
+            data = response.get_json()
 
-def test_quiz_page(client):
-    # Perform a POST request to the '/quiz/<quiz_id>' endpoint
-    quiz_id = 1  # Replace with a valid quiz ID
-    response = client.post(f'/quiz/{quiz_id}')
-    data = response.get_json()
+            self.assertEqual(response.status_code, 200)
+            self.assertEqual(data['message'], 'Acquire data successfully')
+            self.assertIn('quizname', data['data'])
 
-    # Assert the response status code and the expected data
-    assert response.status_code == 200
-    assert data['message'] == 'Acquire data successfully'
-    assert 'quizname' in data['data']  # Check for 'quizname' key within the 'data' dictionary
-
+if __name__ == '__main__':
+    unittest.main()
