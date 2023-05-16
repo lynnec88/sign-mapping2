@@ -20,7 +20,7 @@ body{
     flex-wrap: wrap;
     background-image: url("../images/right.png"), url("../images/left.png");
     background-position: right bottom, left bottom;
-  background-repeat: no-repeat, no-repeat;
+    background-repeat: no-repeat, no-repeat;
 }
 
 header{
