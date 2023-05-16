@@ -12,9 +12,9 @@ const Scores = () => {
   }, []);
 
   return (
-    <div style={{ minHeight: '90%', backgroundColor: 'white' }}>
+    <div style={{ minHeight: '90%'}} className="bg-custom">
       <div className="container">
-        <h1 style={{ fontWeight: 'bolder' }}>Record：</h1>
+        <h1 style={{ fontWeight: 'bolder' }}>Records:</h1>
         <div className="row mt-5">
           {scores.map((score) => (
             <Link

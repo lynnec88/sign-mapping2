@@ -10,7 +10,9 @@ const Quizzes = () => {
         })
     },[])
     return (
-      <div className="list-group w-auto" style={{minHeight:'90%', margin: '50px auto 0 auto',padding:'50px 100px 0 100px', backgroundColor: 'white'}}>
+        <div style={{ minHeight: '90%'}} className="bg-custom">
+      <div className="list-group w-auto" style={{minHeight:'90%', margin: '50px auto 0 auto',padding:'50px 100px 0 100px'}}>
+      <h1 style={{ fontWeight: 'bolder' }}>Quizzes:</h1>
             {quizzes.map(quiz=>
                 <Link to={"/quiz/"+quiz.quiz_id} className="list-group-item list-group-item-action d-flex gap-3 py-3">
                     <img src="https://cdns.iconmonstr.com/wp-content/releases/preview/7.8.0/96/iconmonstr-pencil-text-lined.png"
@@ -21,6 +23,7 @@ const Quizzes = () => {
                 </Link>
             )}
 
+        </div>
         </div>
     );
 };

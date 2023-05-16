@@ -18,6 +18,9 @@ body{
     background-color: white;
     border-radius: 10px;
     flex-wrap: wrap;
+    background-image: url("../images/right.png"), url("../images/left.png");
+    background-position: right bottom, left bottom;
+  background-repeat: no-repeat, no-repeat;
 }
 
 header{
@@ -94,6 +97,7 @@ main{
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
+    background-color: white;
 }
 @media (max-width: 768px) {
     .left{
@@ -310,6 +314,11 @@ main {
 .navbar {
   --bs-navbar-brand-margin-end: 1rem;
 }
+
+.navbar h2 {
+  font-family: 'Oleo Script', Helvetica, sans-serif;
+}
+
 @media screen and (max-width: 768px) {
 .navbar {
   --bs-navbar-padding-x: 0;
@@ -358,6 +367,23 @@ main {
 }
 }
 
+.about-p {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  max-width: 80%;
+  margin-left: 15%;
+  margin-right: 15%;
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  .about-p {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+
 .info-window {
   width: 300px; /* Set the desired width here */
 }
@@ -365,4 +391,8 @@ main {
 .bg-light {
   --bs-bg-opacity: 1;
   background-color: #ffffff !important;
+}
+
+.bg-custom {
+  background-color: transparent;
 }

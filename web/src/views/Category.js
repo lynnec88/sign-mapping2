@@ -26,7 +26,7 @@ const Category = () => {
     },[])
 
     const options = {
-        // backgroundColor: '#483D8B',
+        backgroundColor: '#FFFFFF',
         title: {
             text: 'Sign - Category Diagram',
             right: '15%'
