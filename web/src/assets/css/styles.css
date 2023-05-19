@@ -396,3 +396,16 @@ main {
 .bg-custom {
   background-color: transparent;
 }
+
+.bg-about {
+  background-color: transparent;
+}
+
+@media (max-width: 1400px) {
+  .bg-about {
+    background-color: white;
+    background-image: url("../images/right.png"), url("../images/left.png");
+    background-position: right bottom, left bottom;
+    background-repeat: no-repeat, no-repeat;
+  }
+}
